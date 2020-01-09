@@ -1,0 +1,141 @@
+body {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    margin: 5px;
+}
+
+#nombre {
+    outline: none;
+    height: 100px;
+    font-size: 50px;
+    font-weight: bold;
+    padding-left: 20px;
+    border: solid 4px;
+    border-radius: 25px;
+}
+
+#temporizador {
+    align-self: flex-end;
+    margin-right: 15%;
+    text-align: right;
+}
+
+#container {
+    overflow: hidden;
+    width: 1000px;
+    height: 500px;
+    background: gray;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    border: solid 5px;
+    border-radius: 25px;
+    margin: auto;
+}
+
+button {
+    display: none;
+    border-radius: 25px;
+    width: 150px;
+    height: 100px;
+    border: solid;
+    font-size: 35px;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+}
+
+#puntuacion {
+    display: none;
+}
+.tarjetas {
+    position: relative;
+    border: solid 3px white;
+    background: black;
+    border-radius: 25px;
+    transition: transform 1s, background-color 0.3s step-end, border-color 0.3s step-end;
+}
+
+.correcto {
+    position: relative;
+    border: solid 3px white;
+    border-radius: 25px;
+    transform: rotateY(180deg);
+    transition: transform 1s, background-color 0.3s step-end, border-color 0.3s step-end;
+}
+
+.facil {
+    height: 205px;
+    width: 205px;
+}
+
+.normal {
+    height: 100px;
+    width: 100px;
+    margin: 0 50px;
+}
+
+.dificil {
+    height: 100px;
+    width: 100px;
+    margin: 0 20px;
+}
+
+.tarjetas.flipped {
+    transform: rotateY(180deg);
+}
+
+.blue.flipped, .blue.correcto {
+    background-color: blue;
+}
+
+.green.flipped, .green.correcto {
+    background-color: green;
+}
+
+.red.flipped, .red.correcto {
+    background-color: red;
+}
+
+.yellow.flipped, .yellow.correcto {
+    background-color: yellow;
+}
+
+.white.flipped, .white.correcto {
+    background-color: white;
+    border-color: black;
+}
+
+.brown.flipped, .brown.correcto {
+    background-color: saddlebrown;
+}
+
+.violet.flipped, .violet.correcto {
+    background-color: violet;
+}
+
+.orange.flipped, .orange.correcto {
+    background-color: orangered;
+}
+
+.lightblue.flipped, .lightblue.correcto {
+    background-color: deepskyblue;
+}
+
+.lime.flipped, .lime.correcto {
+    background-color: limegreen;
+}
+
+.salmon.flipped, .salmon.correcto {
+    background-color: salmon;
+}
+.indigo.flipped, .indigo.correcto {
+    background-color: indigo;
+}

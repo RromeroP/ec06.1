@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Memory Game</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="scripts.js"></script>
+
+    <!-- JQuery - CDN -->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+    <h1 id="jugador">Jugador</h1>
+    <h1 id="temporizador">90 segundos</h1>
+    <div id="container">
+        <input id="nombre" type="text" placeholder="Nombre del jugador">
+        <button style="display: unset;" onclick="mostrar_dificultad(this)">Okay</button>
+
+        <!-- Botones ocultos -->
+
+
+        <!-- JQuery - Selectors -->
+        <!-- Usando JQuery si añado una clase, dif en este caso, puedo eliminar la funcion borrar_botones() -->
+        <button class="dif" onclick="generar_tarjetas(1); shuffle(8)">Facil</button>
+
+        <button class="dif" onclick="generar_tarjetas(2); shuffle(16)">Normal</button>
+
+        <button class="dif" onclick="generar_tarjetas(3); shuffle(24)">Dificil</button>
+
+        <h1 id="puntuacion">Jugador</h1>
+    </div>
+</body>
+
+</html>
